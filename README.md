@@ -1,0 +1,1 @@
+This is a simple, responsively designed quiz app created with JavaScript and jQuery.

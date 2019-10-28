@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Space Quiz</title>
+        <link rel="shortcut icon" href="#">
+        <meta name="description" content="Space Quiz">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+       <header>
+           <h1>Space Quiz</h1>
+       </header>
+    
+       <main role="main" class="container">
+           
+        <section class='start-section'>
+          <h2>Test Your Space Knowledge!</h2>
+          <button class='start-button' type="button">
+              <span>Start Quiz</span>
+          </button>
+      </section>
+        
+      <section class='question-section' hidden>
+        <div class='question-answer-container'>
+           
+            <div class='question-container'>
+                <h3 class='question'>What is the temperature of the hottest planet in our solar system?</h3>
+            </div>
+            
+            <form id="answers_form" class='answers-container'>
+               <fieldset>
+                <input class='answer' type="radio" name='answer' value='0' required>400 Degrees C<br />
+                <input class='answer' type="radio" name='answer' value='1' required>450 Degrees C<br />
+                <input class='answer' type="radio" name='answer' value='2' required>500 Degrees C<br />
+                <input class='answer' type="radio" name='answer' value='3' required>550 Degrees C<br /> 
+              </fieldset>
+           </form>
+           <section class='response'></section>
+           <div class="button-holder">
+           <button id="submit_button" class='submit-button' type="submit" form="answers_form">
+              Submit
+           </button>
+           <button id="next_button" hidden>
+              Next
+           </button>
+          </div>
+           
+           <section class='status-container'>
+            <div class='question-circle'>
+                <p class='question-status'>Question one out of ten</p>
+            </div>
+            
+            <div class='score-circle'>
+                <p>Score zero out of ten</p>
+            </div>
+            
+            </div>
+          </section>
+    </section>
+
+    <section class='final-section' hidden>
+      
+      <div class='final-words-container'>
+          <h3 class='final-words'></h3>
+      </div>
+      <div class='final-question-answer-container'>
+          
+          <div class='final-score-container'>
+              <p>Final Score: ten out of ten</p>
+          </div>
+          
+          <div class='final-status-container'>
+            
+            <button class='reset-button'>
+                Try Again
+            </button>
+        </div>
+    </section>
+  </main>
+  
+        <script
+              src="https://code.jquery.com/jquery-3.4.1.js"
+              integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+              crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
